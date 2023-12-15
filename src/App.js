@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import house from "./703logo_t.png"
+import "@aws-amplify/ui-react/styles.css";
+import {
+  withAuthenticator,
+  Button,
+  Heading,
+  Image,
+  View,
+  Card,
+} from "@aws-amplify/ui-react";
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div class="two-cols">
+        <div class="no-pad">
+          <img class="main-img" src={house}/>
+        </div>
+        <div class="no-pad">
+          <h1 class="header">Our 1907 House</h1>
+        </div>
+        <div class="bottom-div">
+          We bought an old house in Central Iowa, and we're going to tell you all about it.
+        </div>
+      </div>
     </div>
   );
 }

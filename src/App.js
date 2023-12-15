@@ -1,14 +1,5 @@
-import logo from "./logo.svg";
 import house from "./703logo_t.png"
 import "@aws-amplify/ui-react/styles.css";
-import {
-  withAuthenticator,
-  Button,
-  Heading,
-  Image,
-  View,
-  Card,
-} from "@aws-amplify/ui-react";
 import './App.css'
 
 function App() {

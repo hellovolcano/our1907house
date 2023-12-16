@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footy {
+    font-size: 20px;
+}
+
+.footy a {
+    color: #B03837;
+}
+
+.footy a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.footy a:active {
+    color: #481717;
+}

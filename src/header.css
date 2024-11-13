@@ -1,38 +1,28 @@
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 header {
     margin: 0px;
+    padding: 30px;
     width: 100%;
     background-color: #fff;
     max-height: 30vmin;
-    border-bottom: #000 2px solid;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
 }
 
 header div {
     display: flex;
-    flex-direction: column;
-    /* margin: 0 auto; */
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    flex-direction: row;
 }
 
 .header-img {
-    height: 100px;
-}
-
-.header-title {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 200;
-    padding: 0px;
-    margin: 0px;
-}
-
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
-
+    height: 50px;
 }
 
 nav ul {
@@ -44,11 +34,12 @@ nav ul {
 nav ul li {
     display: inline;
     list-style-type: disc;
-    padding: 5px;
+    padding: 2px 15px;
 }
 
 nav ul li a {
     color: #B03837;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -56,8 +47,18 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B03837;
+}
+
 .mobile-nav ul li a {
     color: #B03837;
+    text-decoration: none;
 }
 
 .mobile-nav ul li a:hover {
@@ -65,11 +66,13 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-h1 {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 200;
-    padding: 0px;
+.header-h1 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 699px) {

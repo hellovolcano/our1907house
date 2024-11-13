@@ -4,9 +4,10 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Main from "./pages/main";
-import Blog from "./pages/blog";
+import Guidebook from "./pages/guidebook";
 import About from "./pages/about";
-import HowTo from "./pages/how-to";
+import Projects from "./pages/projects";
+import History from "./pages/history";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/how-to" element={<HowTo />} />
-                <Route path="/posts" element={<Blog />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/guide-book" element={<Guidebook />} />
+                <Route path="/history" element={<History />} />
         </Routes>
       </div>
       <Footer />

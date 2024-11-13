@@ -1,9 +1,8 @@
 import '../header.css'
-import house from "../703logo_t.png"
 import Nav from './nav'
 import MobileNav from './mobile-nav'
-import { NavLink } from 'react-router-dom'
 import React, {useState, useEffect} from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Header ( ) {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 700)
@@ -16,21 +15,17 @@ function Header ( ) {
     })
     return (
         <header>
-            <div>
                 <div>
-                    <NavLink to="/">
-                        <img class="header-img" src={house} alt="Our 1907 House" />
-                    </NavLink>
+                        {/* <img class="header-img" src={house} alt="Our 1907 House" /> */}
+                        <h1 class="header-h1">
+                            <NavLink to="/" class="header-link">Our 1907 House</NavLink>
+                        </h1>
                 </div>
                 <div>
-                    <h1>
-                        Our 1907 House
-                    </h1>
+                {isMobile ? (
+                    <MobileNav /> ) : (<Nav/>
+                )}
                 </div>
-            </div>
-            {isMobile ? (
-                <MobileNav /> ) : (<Nav/>
-            )}
         </header>
     )
 }
